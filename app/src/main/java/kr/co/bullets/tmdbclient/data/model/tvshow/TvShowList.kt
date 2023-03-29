@@ -1,4 +1,4 @@
-package kr.co.bullets.tmdbclient.data
+package kr.co.bullets.tmdbclient.data.model.tvshow
 
 
 import com.google.gson.annotations.SerializedName

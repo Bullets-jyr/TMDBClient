@@ -1,8 +1,8 @@
 package kr.co.bullets.tmdbclient.data.api
 
-import kr.co.bullets.tmdbclient.data.ArtistList
-import kr.co.bullets.tmdbclient.data.MovieList
-import kr.co.bullets.tmdbclient.data.TvShowList
+import kr.co.bullets.tmdbclient.data.model.artist.ArtistList
+import kr.co.bullets.tmdbclient.data.model.movie.MovieList
+import kr.co.bullets.tmdbclient.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
