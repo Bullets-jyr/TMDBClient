@@ -2,9 +2,7 @@ package kr.co.bullets.tmdbclient.presentation.tvshow
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import kr.co.bullets.tmdbclient.domain.usecase.GetMoviesUseCase
 import kr.co.bullets.tmdbclient.domain.usecase.GetTvShowsUseCase
-import kr.co.bullets.tmdbclient.domain.usecase.UpdateMoviesUseCase
 import kr.co.bullets.tmdbclient.domain.usecase.UpdateTvShowsUseCase
 
 class TvShowViewModelFactory(

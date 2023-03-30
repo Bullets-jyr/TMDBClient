@@ -3,9 +3,7 @@ package kr.co.bullets.tmdbclient.presentation.artist
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import kr.co.bullets.tmdbclient.domain.usecase.GetArtistsUseCase
-import kr.co.bullets.tmdbclient.domain.usecase.GetTvShowsUseCase
 import kr.co.bullets.tmdbclient.domain.usecase.UpdateArtistsUseCase
-import kr.co.bullets.tmdbclient.domain.usecase.UpdateTvShowsUseCase
 
 class ArtistViewModel(
     private val getArtistsUseCase: GetArtistsUseCase,
