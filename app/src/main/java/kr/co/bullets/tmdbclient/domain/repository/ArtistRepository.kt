@@ -6,5 +6,5 @@ interface ArtistRepository {
 
     suspend fun getArtists(): List<Artist>?
 
-    suspend fun updateArtist(): List<Artist>?
+    suspend fun updateArtists(): List<Artist>?
 }
