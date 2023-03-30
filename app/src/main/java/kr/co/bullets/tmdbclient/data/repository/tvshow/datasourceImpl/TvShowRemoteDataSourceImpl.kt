@@ -1,8 +1,8 @@
-package kr.co.bullets.tmdbclient.data.repository.tvShow.datasourceImpl
+package kr.co.bullets.tmdbclient.data.repository.tvshow.datasourceImpl
 
 import kr.co.bullets.tmdbclient.data.api.TMDBService
 import kr.co.bullets.tmdbclient.data.model.tvshow.TvShowList
-import kr.co.bullets.tmdbclient.data.repository.tvShow.datasource.TvShowRemoteDataSource
+import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import retrofit2.Response
 
 class TvShowRemoteDataSourceImpl(

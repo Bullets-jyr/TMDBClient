@@ -1,7 +1,7 @@
-package kr.co.bullets.tmdbclient.data.repository.tvShow.datasourceImpl
+package kr.co.bullets.tmdbclient.data.repository.tvshow.datasourceImpl
 
 import kr.co.bullets.tmdbclient.data.model.tvshow.TvShow
-import kr.co.bullets.tmdbclient.data.repository.tvShow.datasource.TvShowCacheDataSource
+import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
 
 class TvShowCacheDataSourceImpl : TvShowCacheDataSource {
 

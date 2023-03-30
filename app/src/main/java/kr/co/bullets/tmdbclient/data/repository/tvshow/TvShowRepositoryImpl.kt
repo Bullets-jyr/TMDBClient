@@ -1,10 +1,10 @@
-package kr.co.bullets.tmdbclient.data.repository.tvShow
+package kr.co.bullets.tmdbclient.data.repository.tvshow
 
 import android.util.Log
 import kr.co.bullets.tmdbclient.data.model.tvshow.TvShow
-import kr.co.bullets.tmdbclient.data.repository.tvShow.datasource.TvShowCacheDataSource
-import kr.co.bullets.tmdbclient.data.repository.tvShow.datasource.TvShowLocalDataSource
-import kr.co.bullets.tmdbclient.data.repository.tvShow.datasource.TvShowRemoteDataSource
+import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
+import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDataSource
+import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import kr.co.bullets.tmdbclient.domain.repository.TvShowRepository
 
 class TvShowRepositoryImpl(
