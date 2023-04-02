@@ -6,6 +6,8 @@ import kr.co.bullets.tmdbclient.data.model.artist.Artist
 import kr.co.bullets.tmdbclient.data.model.movie.Movie
 import kr.co.bullets.tmdbclient.data.model.tvshow.TvShow
 
+// Now, let’s create an abstract class for the room database as required.
+// Then here, we need to define abstract functions to get dao interfaces.
 @Database(
     entities = [Movie::class, TvShow::class, Artist::class],
     version = 1,

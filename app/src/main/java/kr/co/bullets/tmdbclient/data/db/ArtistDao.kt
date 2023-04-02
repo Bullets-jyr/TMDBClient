@@ -15,9 +15,9 @@ interface ArtistDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveArtists(artists: List<Artist>)
 
-    @Query("DELETE FROM popular_artist")
+    @Query("DELETE FROM popular_artists")
     suspend fun deleteAllArtists()
 
-    @Query("SELECT * FROM popular_artist")
+    @Query("SELECT * FROM popular_artists")
     suspend fun getArtists(): List<Artist>
 }
