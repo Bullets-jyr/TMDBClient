@@ -14,6 +14,10 @@ class TvShowRepositoryImpl(
 ) : TvShowRepository {
 
     override suspend fun getTvShows(): List<TvShow>? {
+        // Here we can just call to getmoviesFromCache() function.
+        // If cache data available system will return them.
+        // If not system will take them from the data base and retrun them.
+        // If they are not available in the database system will download them from the TMDB Web API.
         return getTvShowsFromCache()
     }
 
