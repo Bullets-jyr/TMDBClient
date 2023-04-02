@@ -2,8 +2,11 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
+            <!-- If you want, you can also change colors. -->
             <solid android:color="#22211F" />
             <stroke android:color="#8B878E" android:width="2dp" />
+            <!-- this corners tag allows us to make the rounded corners of the button. -->
+            <!-- You can change the dp value of the radius and test. -->
             <corners android:radius="15dp" />
         </shape>
     </item>
