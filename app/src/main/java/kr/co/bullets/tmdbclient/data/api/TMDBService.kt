@@ -7,6 +7,8 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+// Since we are going to use coroutines for background processing, we need to define these as suspending
+// So the return type of this function should be a retrofit response object of type MovieList.
 interface TMDBService {
 
     @GET("movie/popular")
