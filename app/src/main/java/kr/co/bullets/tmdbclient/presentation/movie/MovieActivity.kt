@@ -13,6 +13,7 @@ import javax.inject.Inject
 
 class MovieActivity : AppCompatActivity() {
 
+    // Now we can Inject dependencies to this activity. Let’s inject MovieViewModelFactory.
     @Inject
     lateinit var factory: MovieViewModelFactory
     private lateinit var movieViewModel: MovieViewModel
@@ -21,13 +22,14 @@ class MovieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_movie)
+        // // let’s just go to MovieActivity and write some codes to verify our dependency injection system
         (application as Injector).createMovieSubComponent()
             .inject(this)
+        movieViewModel = ViewModelProvider(this, factory).get(MovieViewModel::class.java)
 
-        movieViewModel = ViewModelProvider(this, factory)
-            .get(MovieViewModel::class.java)
-
+        // Then get the live data using the view model.
         val responseLiveData = movieViewModel.getMovies()
+        // And observe the live data.
         responseLiveData.observe(this, Observer {
             Log.i("MYTAG", it.toString())
         })

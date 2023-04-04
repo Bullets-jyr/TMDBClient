@@ -7,6 +7,10 @@ import kr.co.bullets.tmdbclient.domain.repository.MovieRepository
 import kr.co.bullets.tmdbclient.domain.repository.TvShowRepository
 import kr.co.bullets.tmdbclient.domain.usecase.*
 
+// These use case classes has repository instances as dependencies.
+// So to provide those repository dependencies, we need to create RepositoryModule.
+// In this project we have 6 use cases. View model factories need these use cases as dependencies.
+// So now, let’s create use case module to provide those use cases as dependencies.
 @Module
 class UseCaseModule {
 

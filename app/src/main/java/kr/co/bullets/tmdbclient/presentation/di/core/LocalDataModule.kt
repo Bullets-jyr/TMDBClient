@@ -13,6 +13,9 @@ import kr.co.bullets.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDat
 import kr.co.bullets.tmdbclient.data.repository.tvshow.datasourceImpl.TvShowLocalDataSourceImpl
 import javax.inject.Singleton
 
+// You can see, they all have their dao interface as a constructor parameter.
+// So when we create provider function, we need to add those dao interfaces as function parameters.
+// We have already created this database module to provide those dao dependencies.
 @Module
 class LocalDataModule {
 
